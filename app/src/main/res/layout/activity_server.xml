@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ServerActivity">
+
+    <Button
+        android:id="@+id/to_Show_Data2"
+        android:layout_width="261dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="60dp"
+        android:onClick="toSetting"
+        android:text="Settings"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/to_Show_Data" />
+
+    <Button
+        android:id="@+id/to_Data_Collection"
+        android:layout_width="261dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="220dp"
+        android:onClick="toDataCollect"
+        android:text="Collect Data"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/to_Show_Data"
+        android:layout_width="261dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="60dp"
+        android:onClick="toShowData"
+        android:text="Show Data"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/to_Data_Collection" />
+
+</android.support.constraint.ConstraintLayout>

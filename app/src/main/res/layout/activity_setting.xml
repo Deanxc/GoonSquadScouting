@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".settingActivity">
+
+    <Button
+        android:id="@+id/button_move"
+        android:layout_width="202dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="196dp"
+        android:layout_marginTop="96dp"
+        android:text="Move DB"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_delete" />
+
+    <Button
+        android:id="@+id/button_delete"
+        android:layout_width="202dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="196dp"
+        android:layout_marginTop="388dp"
+        android:text="Delete DB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/delete_team_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="82dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Team Number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_delete" />
+
+    <EditText
+        android:id="@+id/delete_match_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Match Number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/delete_team_num" />
+
+    <Button
+        android:id="@+id/dbDeleteRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="126dp"
+        android:text="Delete"
+        app:layout_constraintStart_toEndOf="@+id/delete_match_num"
+        app:layout_constraintTop_toBottomOf="@+id/button_delete" />
+</android.support.constraint.ConstraintLayout>

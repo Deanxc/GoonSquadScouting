@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_sandstorm"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_sandstorm" />
+
+    <item
+        android:id="@+id/navigation_teleop_endgame"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/title_teleop_endgame" />
+
+    <item
+        android:id="@+id/navigation_instructions"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="@string/title_instructions" />
+
+</menu>
