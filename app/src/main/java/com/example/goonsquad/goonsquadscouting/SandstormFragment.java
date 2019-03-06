@@ -454,38 +454,50 @@ public class SandstormFragment extends Fragment implements View.OnClickListener 
                 break;
             case R.id.stage_1_decrease:
                 if(isSwitched) {
-                    rsh1 -= 1;
-                    TextView viewToChange = v.findViewById(R.id.level_1_rocket_text);
-                    viewToChange.setText(Integer.toString(rsh1));
+                    if(rsh1 > 0) {
+                        rsh1 -= 1;
+                        TextView viewToChange = v.findViewById(R.id.level_1_rocket_text);
+                        viewToChange.setText(Integer.toString(rsh1));
+                    }
                 }
                 else {
-                    rsc1 -= 1;
-                    TextView viewToChange = v.findViewById(R.id.level_1_rocket_text);
-                    viewToChange.setText(Integer.toString(rsc1));
+                    if(rsc1 > 0) {
+                        rsc1 -= 1;
+                        TextView viewToChange = v.findViewById(R.id.level_1_rocket_text);
+                        viewToChange.setText(Integer.toString(rsc1));
+                    }
                 }
                 break;
             case R.id.stage_2_decrease:
                 if(isSwitched) {
-                    rsh2 -= 1;
-                    TextView viewToChange = v.findViewById(R.id.level_2_rocket_text);
-                    viewToChange.setText(Integer.toString(rsh2));
+                    if(rsh2 > 0) {
+                        rsh2 -= 1;
+                        TextView viewToChange = v.findViewById(R.id.level_2_rocket_text);
+                        viewToChange.setText(Integer.toString(rsh2));
+                    }
                 }
                 else {
-                    rsc2 -= 1;
-                    TextView viewToChange = v.findViewById(R.id.level_2_rocket_text);
-                    viewToChange.setText(Integer.toString(rsc2));
+                    if(rsc2 > 0) {
+                        rsc2 -= 1;
+                        TextView viewToChange = v.findViewById(R.id.level_2_rocket_text);
+                        viewToChange.setText(Integer.toString(rsc2));
+                    }
                 }
                 break;
             case R.id.stage_3_decrease:
                 if(isSwitched) {
-                    rsh3 -= 1;
-                    TextView viewToChange = v.findViewById(R.id.level_3_rocket_text);
-                    viewToChange.setText(Integer.toString(rsh3));
+                    if(rsh3 > 0) {
+                        rsh3 -= 1;
+                        TextView viewToChange = v.findViewById(R.id.level_3_rocket_text);
+                        viewToChange.setText(Integer.toString(rsh3));
+                    }
                 }
                 else {
-                    rsc3 -= 1;
-                    TextView viewToChange = v.findViewById(R.id.level_3_rocket_text);
-                    viewToChange.setText(Integer.toString(rsc3));
+                    if(rsc3 > 0) {
+                        rsc3 -= 1;
+                        TextView viewToChange = v.findViewById(R.id.level_3_rocket_text);
+                        viewToChange.setText(Integer.toString(rsc3));
+                    }
                 }
                 break;
 
