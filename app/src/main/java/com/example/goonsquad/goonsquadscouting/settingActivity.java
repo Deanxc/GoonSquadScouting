@@ -32,12 +32,12 @@ public class settingActivity extends AppCompatActivity {
 
                 if(view != null) {
                     TextView teamNum = findViewById(R.id.delete_team_num);
-                    String team = teamNum.getText().toString();
+                    int team = Integer.parseInt(teamNum.getText().toString());
 
                     TextView matchNum = findViewById(R.id.delete_match_num);
-                    String match = matchNum.getText().toString();
-                    Log.d("Team: ", team);
-                    Log.d("Match: ", match);
+                    int match = Integer.parseInt(matchNum.getText().toString());
+                    //Log.d("Team: ", team);
+                    //Log.d("Match: ", match);
                     myDb.deleteRow(team, match);
                 }
             }

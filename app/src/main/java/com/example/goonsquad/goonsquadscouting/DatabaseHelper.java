@@ -32,7 +32,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    public boolean insertLocal(String Team_id, String Match_id, int col3, int col4, int col5,
+    public boolean insertLocal(int Team_id, int Match_id, int col3, int col4, int col5,
                                int col6, int col7, int col8, int col9, int col10, int col11,
                                int col12, int col13, int col14, int col15, int col16, int col17,
                                int col18, int col19, int col20, int col21, int col22, int col23,
@@ -90,7 +90,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return db.rawQuery("select * from " + TABLE_MATCH_STATS, null);
     }
 
-    public int getNumOfMatches(String teamNum) {
+    public int getNumOfMatches(int teamNum) {
         SQLiteDatabase db = this.getWritableDatabase();
         String query = "select " + COL_L1 + " from " + TABLE_MATCH_STATS + " where " + COL_L1 + " = " + teamNum;
         Cursor cur = db.rawQuery(query, null);
@@ -98,7 +98,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return cur.getCount();
     }
 
-    public String getNumOfLeaveHab(String teamNum) {
+    public String getNumOfLeaveHab(int teamNum) {
         SQLiteDatabase db = this.getWritableDatabase();
         String query = "select " + COL_L38 + ", " + COL_L37 + " from " + TABLE_MATCH_STATS + " where " + COL_L1 + " = " + teamNum + " AND " + COL_L38 + " = 1";
         Cursor cur = db.rawQuery(query, null);
@@ -119,7 +119,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return send;
     }
 
-    public int getNumofCargo(String teamNum) {
+    public int getNumofCargo(int teamNum) {
         SQLiteDatabase db = this.getWritableDatabase();
         String query = "select " + COL_L3 + ", " +
                 COL_L5 + ", " + COL_L7 + ", " +
@@ -147,7 +147,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return cargoCount;
     }
 
-    public int getNumOfHatchPanels(String teamNum) {
+    public int getNumOfHatchPanels(int teamNum) {
         SQLiteDatabase db = this.getWritableDatabase();
         String query = "select " + COL_L11 + ", " +
                 COL_L13 + ", " + COL_L15 + ", " +
@@ -175,7 +175,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return hatchCount;
     }
 
-    public String getNumOfHatchandCargo (String teamNum) {
+    public String getNumOfHatchandCargo (int teamNum) {
         SQLiteDatabase db = this.getWritableDatabase();
         String query = "select " + COL_L5 + ", " +
                 COL_L7 + ", " + COL_L13 + ", " +
@@ -206,7 +206,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return send;
     }
 
-    public String getNumOfClimb (String teamNum) {
+    public String getNumOfClimb (int teamNum) {
         SQLiteDatabase db = this.getWritableDatabase();
         String query = "select " + COL_L35 + " from " + TABLE_MATCH_STATS +
                 " where " + COL_L35 + " > 0 " + " and " + COL_L1 + " = " + teamNum;
@@ -233,7 +233,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return send;
     }
 
-    public int getNumDefensePlayed (String teamNum) {
+    public int getNumDefensePlayed (int teamNum) {
         SQLiteDatabase db = this.getWritableDatabase();
         String query = "select " + COL_L39 + " from " + TABLE_MATCH_STATS +
                 " where " + COL_L39 + " = 1 " + " and " + COL_L1 + " = " + teamNum;
@@ -242,7 +242,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return cur.getCount();
     }
 
-    public void deleteRow (String teamNum, String matchNum) {
+    public void deleteRow (int teamNum, int matchNum) {
         SQLiteDatabase db = this.getWritableDatabase();
         String query = "delete" + " from " + TABLE_MATCH_STATS +
                 " where " + COL_L1 + " = " + teamNum + " and " + COL_L2 + " = " + matchNum;

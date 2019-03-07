@@ -17,6 +17,7 @@ import android.widget.RadioGroup;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import static com.example.goonsquad.goonsquadscouting.Global.*;
 
 
@@ -118,7 +119,15 @@ public class SandstormFragment extends Fragment implements View.OnClickListener 
         teamID.addTextChangedListener(new TextWatcher() {
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-
+                try {
+                    teamId = Integer.parseInt(s.toString());
+                }
+                catch(Exception e){
+                    //teamId = -1;
+                    EditText fixStupid = v.findViewById(R.id.team_id_Text);
+                    fixStupid.setText("",null);
+                    //Toast.makeText(getContext(), "Enter a number you dumb fuck", Toast.LENGTH_LONG).show();
+                }
             }
 
             @Override
@@ -127,7 +136,7 @@ public class SandstormFragment extends Fragment implements View.OnClickListener 
             }
             @Override
             public void afterTextChanged(Editable s) {
-                teamId = s.toString();
+                    teamId = Integer.parseInt(s.toString());
             }
         });
 
@@ -147,7 +156,7 @@ public class SandstormFragment extends Fragment implements View.OnClickListener 
 
             @Override
             public void afterTextChanged(Editable s) {
-                matchId = s.toString();
+                matchId = Integer.parseInt(s.toString());
             }
         });
 

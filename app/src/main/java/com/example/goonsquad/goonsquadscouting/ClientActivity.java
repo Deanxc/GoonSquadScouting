@@ -102,8 +102,8 @@ public class ClientActivity extends AppCompatActivity implements BottomNavigatio
         //Defense
         defensePlayedVal = 0;
 
-        teamId = null;
-        matchId = null;
+        teamId = -1;
+        matchId = -1;
         sandstorm_cargo_text = "Cargo";
         sandstorm_hatch_text = "Hatch";
 

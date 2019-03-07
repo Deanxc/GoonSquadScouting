@@ -428,7 +428,7 @@ public class BluetoothServerFragment extends Fragment {
                         List<String> received = Arrays.asList(input.split(",  "));
                         Log.d(TAG, "This is the inputted string:" + input);
                         DatabaseHelper myDb = new DatabaseHelper(getContext());
-                        myDb.insertLocal(received.get(0), received.get(1), Integer.parseInt(received.get(2)), Integer.parseInt(received.get(3)),
+                        myDb.insertLocal(Integer.parseInt(received.get(0)), Integer.parseInt(received.get(1)), Integer.parseInt(received.get(2)), Integer.parseInt(received.get(3)),
                                 Integer.parseInt(received.get(4)), Integer.parseInt(received.get(5)), Integer.parseInt(received.get(6)), Integer.parseInt(received.get(7)),
                                 Integer.parseInt(received.get(8)), Integer.parseInt(received.get(9)), Integer.parseInt(received.get(10)), Integer.parseInt(received.get(11)),
                                 Integer.parseInt(received.get(12)), Integer.parseInt(received.get(13)), Integer.parseInt(received.get(14)), Integer.parseInt(received.get(15)),
@@ -459,7 +459,7 @@ public class BluetoothServerFragment extends Fragment {
                             Log.d("Entry 1: ", Integer.toString((i*36) + 1));
                             Log.d("Entry 2: ", Integer.toString((i*36) + 2));
                             Log.d("Entry 3: ", Integer.toString((i*36) + 3));
-                            myDb.insertLocal(received.get((i*36)+ 1), received.get((i*36) + 2), Integer.parseInt(received.get((i*36) + 3)),
+                            myDb.insertLocal(Integer.parseInt(received.get((i*36)+ 1)), Integer.parseInt(received.get((i*36) + 2)), Integer.parseInt(received.get((i*36) + 3)),
                                     Integer.parseInt(received.get((i*36) + 4)), Integer.parseInt(received.get((i*36) + 5)), Integer.parseInt(received.get((i*36) + 6)), Integer.parseInt(received.get((i*36) + 7)),
                                     Integer.parseInt(received.get((i*36) + 8)), Integer.parseInt(received.get((i*36) + 9)), Integer.parseInt(received.get((i*36) + 10)), Integer.parseInt(received.get((i*36) + 11)),
                                     Integer.parseInt(received.get((i*36) + 12)), Integer.parseInt(received.get((i*36) + 13)), Integer.parseInt(received.get((i*36) + 14)), Integer.parseInt(received.get((i*36) + 15)),
@@ -470,12 +470,12 @@ public class BluetoothServerFragment extends Fragment {
                                     Integer.parseInt(received.get((i*36) + 32)), Integer.parseInt(received.get((i*36) + 33)), Integer.parseInt(received.get((i*36) + 34)), Integer.parseInt(received.get((i*36) + 35)), received.get((i*36)+ 36));
 
                         }
-                        Log.d("Returned Num of Matches", Integer.toString(myDb.getNumOfMatches("3604")));
-                        Log.d("Return number of Hab", myDb.getNumOfLeaveHab("3604"));
-                        Log.d("Return number of C", Integer.toString(myDb.getNumofCargo("3604")));
-                        Log.d("Return number of H", Integer.toString(myDb.getNumOfHatchPanels("3604")));
-                        Log.d("Return number of H/C", myDb.getNumOfHatchandCargo("3604"));
-                        Log.d("Return number of climb", myDb.getNumOfClimb("3604"));
+                        Log.d("Returned Num of Matches", Integer.toString(myDb.getNumOfMatches(3604)));
+                        Log.d("Return number of Hab", myDb.getNumOfLeaveHab(3604));
+                        Log.d("Return number of C", Integer.toString(myDb.getNumofCargo(3604)));
+                        Log.d("Return number of H", Integer.toString(myDb.getNumOfHatchPanels(3604)));
+                        Log.d("Return number of H/C", myDb.getNumOfHatchandCargo(3604));
+                        Log.d("Return number of climb", myDb.getNumOfClimb(3604));
 
 
                         mConversationArrayAdapter.add(mConnectedDeviceName + ": I successfully received a copy of the database");

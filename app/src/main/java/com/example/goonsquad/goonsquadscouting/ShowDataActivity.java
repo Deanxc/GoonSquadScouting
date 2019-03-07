@@ -28,7 +28,7 @@ public class ShowDataActivity extends AppCompatActivity {
                 if (null != view) {
                     //perform all queries, then change views
                     TextView text = findViewById(R.id.enter_team_num_r1);
-                    String teamNum = text.getText().toString();
+                    int teamNum = Integer.parseInt(text.getText().toString());
                     int numOfMatches = myDb.getNumOfMatches(teamNum);
                     String lvlCross = myDb.getNumOfLeaveHab(teamNum);
                     int avgHatch = myDb.getNumOfHatchPanels(teamNum);
@@ -63,7 +63,7 @@ public class ShowDataActivity extends AppCompatActivity {
                 if (null != view) {
                     //perform all queries, then change views
                     TextView text = findViewById(R.id.enter_team_num_r2);
-                    String teamNum = text.getText().toString();
+                    int teamNum = Integer.parseInt(text.getText().toString());
                     int numOfMatches = myDb.getNumOfMatches(teamNum);
                     String lvlCross = myDb.getNumOfLeaveHab(teamNum);
                     int avgHatch = myDb.getNumOfHatchPanels(teamNum);
@@ -99,7 +99,7 @@ public class ShowDataActivity extends AppCompatActivity {
                 if (null != view) {
                     //perform all queries, then change views
                     TextView text = findViewById(R.id.enter_team_num_r3);
-                    String teamNum = text.getText().toString();
+                    int teamNum = Integer.parseInt(text.getText().toString());
                     int numOfMatches = myDb.getNumOfMatches(teamNum);
                     String lvlCross = myDb.getNumOfLeaveHab(teamNum);
                     int avgHatch = myDb.getNumOfHatchPanels(teamNum);
@@ -134,7 +134,7 @@ public class ShowDataActivity extends AppCompatActivity {
                 if (null != view) {
                     //perform all queries, then change views
                     TextView text = findViewById(R.id.enter_team_num_b1);
-                    String teamNum = text.getText().toString();
+                    int teamNum = Integer.parseInt(text.getText().toString());
                     int numOfMatches = myDb.getNumOfMatches(teamNum);
                     String lvlCross = myDb.getNumOfLeaveHab(teamNum);
                     int avgHatch = myDb.getNumOfHatchPanels(teamNum);
@@ -170,7 +170,7 @@ public class ShowDataActivity extends AppCompatActivity {
                 if (null != view) {
                     //perform all queries, then change views
                     TextView text = findViewById(R.id.enter_team_num_b2);
-                    String teamNum = text.getText().toString();
+                    int teamNum = Integer.parseInt(text.getText().toString());
                     int numOfMatches = myDb.getNumOfMatches(teamNum);
                     String lvlCross = myDb.getNumOfLeaveHab(teamNum);
                     int avgHatch = myDb.getNumOfHatchPanels(teamNum);
@@ -206,7 +206,7 @@ public class ShowDataActivity extends AppCompatActivity {
                 if (null != view) {
                     //perform all queries, then change views
                     TextView text = findViewById(R.id.enter_team_num_b3);
-                    String teamNum = text.getText().toString();
+                    int teamNum = Integer.parseInt(text.getText().toString());
                     int numOfMatches = myDb.getNumOfMatches(teamNum);
                     String lvlCross = myDb.getNumOfLeaveHab(teamNum);
                     int avgHatch = myDb.getNumOfHatchPanels(teamNum);

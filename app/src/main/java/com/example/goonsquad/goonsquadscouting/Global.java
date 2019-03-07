@@ -1,6 +1,8 @@
 package com.example.goonsquad.goonsquadscouting;
 
- class Global {
+import android.support.annotation.Nullable;
+
+class Global {
 
     /**
 
@@ -65,8 +67,8 @@ package com.example.goonsquad.goonsquadscouting;
 
      static final String Table_Match_Creation_Query = "CREATE TABLE " + TABLE_MATCH_STATS + " ("
             + COL_L0 + " INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "
-            + COL_L1 + " TEXT, "
-            + COL_L2 + " TEXT, "
+            + COL_L1 + " INTEGER, "
+            + COL_L2 + " INTEGER, "
             + COL_L3 + " INTEGER, "
             + COL_L4 + " INTEGER, "
             + COL_L5 + " INTEGER, "
@@ -160,8 +162,8 @@ package com.example.goonsquad.goonsquadscouting;
      */
 
     //First activity variables
-     static String teamId = null;
-     static String matchId = null;
+     static int teamId = -1;
+     static int matchId = -1;
      static String sandstorm_cargo_text = "Cargo";
      static String sandstorm_hatch_text = "Hatch";
 
