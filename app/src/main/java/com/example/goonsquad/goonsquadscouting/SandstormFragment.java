@@ -156,7 +156,7 @@ public class SandstormFragment extends Fragment implements View.OnClickListener 
 
             @Override
             public void afterTextChanged(Editable s) {
-                matchId = Integer.parseInt(s.toString());
+                    matchId = Integer.parseInt(s.toString());
             }
         });
 
