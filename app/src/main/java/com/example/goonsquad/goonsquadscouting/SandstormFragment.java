@@ -16,7 +16,6 @@ import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.Switch;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import static com.example.goonsquad.goonsquadscouting.Global.*;
 
@@ -119,15 +118,7 @@ public class SandstormFragment extends Fragment implements View.OnClickListener 
         teamID.addTextChangedListener(new TextWatcher() {
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                try {
-                    teamId = Integer.parseInt(s.toString());
-                }
-                catch(Exception e){
-                    //teamId = -1;
-                    EditText fixStupid = v.findViewById(R.id.team_id_Text);
-                    fixStupid.setText("",null);
-                    //Toast.makeText(getContext(), "Enter a number you dumb fuck", Toast.LENGTH_LONG).show();
-                }
+
             }
 
             @Override
@@ -136,6 +127,7 @@ public class SandstormFragment extends Fragment implements View.OnClickListener 
             }
             @Override
             public void afterTextChanged(Editable s) {
+                if(s.length() > 0)
                     teamId = Integer.parseInt(s.toString());
             }
         });
@@ -156,6 +148,7 @@ public class SandstormFragment extends Fragment implements View.OnClickListener 
 
             @Override
             public void afterTextChanged(Editable s) {
+                if(s.length() > 0)
                     matchId = Integer.parseInt(s.toString());
             }
         });
@@ -283,13 +276,6 @@ public class SandstormFragment extends Fragment implements View.OnClickListener 
         return v;
     }
 
-    // TODO: Rename method, update argument and hook method into UI event
-    public void onButtonPressed(Uri uri) {
-        if (mListener != null) {
-            mListener.onSandstormFragmentInteraction(uri);
-        }
-    }
-
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
@@ -318,7 +304,6 @@ public class SandstormFragment extends Fragment implements View.OnClickListener 
      * >Communicating with Other Fragments</a> for more information.
      */
     public interface OnFragmentInteractionListener {
-        // TODO: Update argument type and name
         void onSandstormFragmentInteraction(Uri uri);
     }
 
@@ -327,189 +312,177 @@ public class SandstormFragment extends Fragment implements View.OnClickListener 
     public void onClick(View view) {
 
         View v = getView();
-        switch(view.getId()) {
-            case R.id.cs1:
-                if(isSwitched) {
-                    hs1Val += 1;
-                    TextView viewToChange = v.findViewById(R.id.cs1Text);
-                    viewToChange.setText(Integer.toString(hs1Val));
-                }
-                else {
-                    cs1Val += 1;
-                    TextView viewToChange = v.findViewById(R.id.cs1Text);
-                    viewToChange.setText(Integer.toString(cs1Val));
-                }
-                break;
-            case R.id.cs2:
-                if(isSwitched) {
-                    hs2Val += 1;
-                    TextView viewToChange = v.findViewById(R.id.cs2Text);
-                    viewToChange.setText(Integer.toString(hs2Val));
-                }
-                else {
-                    cs2Val += 1;
-                    TextView viewToChange = v.findViewById(R.id.cs2Text);
-                    viewToChange.setText(Integer.toString(cs2Val));
-                }
-                break;
-            case R.id.cs3:
-                if(isSwitched) {
-                    hs3Val += 1;
-                    TextView viewToChange = v.findViewById(R.id.cs3Text);
-                    viewToChange.setText(Integer.toString(hs3Val));
-                }
-                else {
-                    cs3Val += 1;
-                    TextView viewToChange = v.findViewById(R.id.cs3Text);
-                    viewToChange.setText(Integer.toString(cs3Val));
-                }
-                break;
-            case R.id.cs4:
-                if(isSwitched) {
-                    hs4Val += 1;
-                    TextView viewToChange = v.findViewById(R.id.cs4Text);
-                    viewToChange.setText(Integer.toString(hs4Val));
-                }
-                else {
-                    cs4Val += 1;
-                    TextView viewToChange = v.findViewById(R.id.cs4Text);
-                    viewToChange.setText(Integer.toString(cs4Val));
-                }
-                break;
-            case R.id.cs5:
-                if(isSwitched) {
-                    hs5Val += 1;
-                    TextView viewToChange = v.findViewById(R.id.cs5Text);
-                    viewToChange.setText(Integer.toString(hs5Val));
-                }
-                else {
-                    cs5Val += 1;
-                    TextView viewToChange = v.findViewById(R.id.cs5Text);
-                    viewToChange.setText(Integer.toString(cs5Val));
-                }
-                break;
-            case R.id.cs6:
-                if(isSwitched) {
-                    hs6Val += 1;
-                    TextView viewToChange = v.findViewById(R.id.cs6Text);
-                    viewToChange.setText(Integer.toString(hs6Val));
-                }
-                else {
-                    cs6Val += 1;
-                    TextView viewToChange = v.findViewById(R.id.cs6Text);
-                    viewToChange.setText(Integer.toString(cs6Val));
-                }
-                break;
-            case R.id.cs7:
-                if(isSwitched) {
-                    hs7Val += 1;
-                    TextView viewToChange = v.findViewById(R.id.cs7Text);
-                    viewToChange.setText(Integer.toString(hs7Val));
-                }
-                else {
-                    cs7Val += 1;
-                    TextView viewToChange = v.findViewById(R.id.cs7Text);
-                    viewToChange.setText(Integer.toString(cs7Val));
-                }
-                break;
-            case R.id.cs8:
-                if(isSwitched) {
-                    hs8Val += 1;
-                    TextView viewToChange = v.findViewById(R.id.cs8Text);
-                    viewToChange.setText(Integer.toString(hs8Val));
-                }
-                else {
-                    cs8Val += 1;
-                    TextView viewToChange = v.findViewById(R.id.cs8Text);
-                    viewToChange.setText(Integer.toString(cs8Val));
-                }
-                break;
-            //rocket ship part of switch statement
-            case R.id.stage_1_increase:
-                if(isSwitched) {
-                    rsh1 += 1;
-                    TextView viewToChange = v.findViewById(R.id.level_1_rocket_text);
-                    viewToChange.setText(Integer.toString(rsh1));
-                }
-                else {
-                    rsc1 += 1;
-                    TextView viewToChange = v.findViewById(R.id.level_1_rocket_text);
-                    viewToChange.setText(Integer.toString(rsc1));
-                }
-                break;
-            case R.id.stage_2_increase:
-                if(isSwitched) {
-                    rsh2 += 1;
-                    TextView viewToChange = v.findViewById(R.id.level_2_rocket_text);
-                    viewToChange.setText(Integer.toString(rsh2));
-                }
-                else {
-                    rsc2 += 1;
-                    TextView viewToChange = v.findViewById(R.id.level_2_rocket_text);
-                    viewToChange.setText(Integer.toString(rsc2));
-                }
-                break;
-            case R.id.stage_3_increase:
-                if(isSwitched) {
-                    rsh3 += 1;
-                    TextView viewToChange = v.findViewById(R.id.level_3_rocket_text);
-                    viewToChange.setText(Integer.toString(rsh3));
-                }
-                else {
-                    rsc3 += 1;
-                    TextView viewToChange = v.findViewById(R.id.level_3_rocket_text);
-                    viewToChange.setText(Integer.toString(rsc3));
-                }
-                break;
-            case R.id.stage_1_decrease:
-                if(isSwitched) {
-                    if(rsh1 > 0) {
-                        rsh1 -= 1;
+        if (v != null) {
+            switch (view.getId()) {
+                case R.id.cs1:
+                    if (isSwitched) {
+                        hs1Val += 1;
+                        TextView viewToChange = v.findViewById(R.id.cs1Text);
+                        viewToChange.setText(Integer.toString(hs1Val));
+                    } else {
+                        cs1Val += 1;
+                        TextView viewToChange = v.findViewById(R.id.cs1Text);
+                        viewToChange.setText(Integer.toString(cs1Val));
+                    }
+                    break;
+                case R.id.cs2:
+                    if (isSwitched) {
+                        hs2Val += 1;
+                        TextView viewToChange = v.findViewById(R.id.cs2Text);
+                        viewToChange.setText(Integer.toString(hs2Val));
+                    } else {
+                        cs2Val += 1;
+                        TextView viewToChange = v.findViewById(R.id.cs2Text);
+                        viewToChange.setText(Integer.toString(cs2Val));
+                    }
+                    break;
+                case R.id.cs3:
+                    if (isSwitched) {
+                        hs3Val += 1;
+                        TextView viewToChange = v.findViewById(R.id.cs3Text);
+                        viewToChange.setText(Integer.toString(hs3Val));
+                    } else {
+                        cs3Val += 1;
+                        TextView viewToChange = v.findViewById(R.id.cs3Text);
+                        viewToChange.setText(Integer.toString(cs3Val));
+                    }
+                    break;
+                case R.id.cs4:
+                    if (isSwitched) {
+                        hs4Val += 1;
+                        TextView viewToChange = v.findViewById(R.id.cs4Text);
+                        viewToChange.setText(Integer.toString(hs4Val));
+                    } else {
+                        cs4Val += 1;
+                        TextView viewToChange = v.findViewById(R.id.cs4Text);
+                        viewToChange.setText(Integer.toString(cs4Val));
+                    }
+                    break;
+                case R.id.cs5:
+                    if (isSwitched) {
+                        hs5Val += 1;
+                        TextView viewToChange = v.findViewById(R.id.cs5Text);
+                        viewToChange.setText(Integer.toString(hs5Val));
+                    } else {
+                        cs5Val += 1;
+                        TextView viewToChange = v.findViewById(R.id.cs5Text);
+                        viewToChange.setText(Integer.toString(cs5Val));
+                    }
+                    break;
+                case R.id.cs6:
+                    if (isSwitched) {
+                        hs6Val += 1;
+                        TextView viewToChange = v.findViewById(R.id.cs6Text);
+                        viewToChange.setText(Integer.toString(hs6Val));
+                    } else {
+                        cs6Val += 1;
+                        TextView viewToChange = v.findViewById(R.id.cs6Text);
+                        viewToChange.setText(Integer.toString(cs6Val));
+                    }
+                    break;
+                case R.id.cs7:
+                    if (isSwitched) {
+                        hs7Val += 1;
+                        TextView viewToChange = v.findViewById(R.id.cs7Text);
+                        viewToChange.setText(Integer.toString(hs7Val));
+                    } else {
+                        cs7Val += 1;
+                        TextView viewToChange = v.findViewById(R.id.cs7Text);
+                        viewToChange.setText(Integer.toString(cs7Val));
+                    }
+                    break;
+                case R.id.cs8:
+                    if (isSwitched) {
+                        hs8Val += 1;
+                        TextView viewToChange = v.findViewById(R.id.cs8Text);
+                        viewToChange.setText(Integer.toString(hs8Val));
+                    } else {
+                        cs8Val += 1;
+                        TextView viewToChange = v.findViewById(R.id.cs8Text);
+                        viewToChange.setText(Integer.toString(cs8Val));
+                    }
+                    break;
+                //rocket ship part of switch statement
+                case R.id.stage_1_increase:
+                    if (isSwitched) {
+                        rsh1 += 1;
                         TextView viewToChange = v.findViewById(R.id.level_1_rocket_text);
                         viewToChange.setText(Integer.toString(rsh1));
-                    }
-                }
-                else {
-                    if(rsc1 > 0) {
-                        rsc1 -= 1;
+                    } else {
+                        rsc1 += 1;
                         TextView viewToChange = v.findViewById(R.id.level_1_rocket_text);
                         viewToChange.setText(Integer.toString(rsc1));
                     }
-                }
-                break;
-            case R.id.stage_2_decrease:
-                if(isSwitched) {
-                    if(rsh2 > 0) {
-                        rsh2 -= 1;
+                    break;
+                case R.id.stage_2_increase:
+                    if (isSwitched) {
+                        rsh2 += 1;
                         TextView viewToChange = v.findViewById(R.id.level_2_rocket_text);
                         viewToChange.setText(Integer.toString(rsh2));
-                    }
-                }
-                else {
-                    if(rsc2 > 0) {
-                        rsc2 -= 1;
+                    } else {
+                        rsc2 += 1;
                         TextView viewToChange = v.findViewById(R.id.level_2_rocket_text);
                         viewToChange.setText(Integer.toString(rsc2));
                     }
-                }
-                break;
-            case R.id.stage_3_decrease:
-                if(isSwitched) {
-                    if(rsh3 > 0) {
-                        rsh3 -= 1;
+                    break;
+                case R.id.stage_3_increase:
+                    if (isSwitched) {
+                        rsh3 += 1;
                         TextView viewToChange = v.findViewById(R.id.level_3_rocket_text);
                         viewToChange.setText(Integer.toString(rsh3));
-                    }
-                }
-                else {
-                    if(rsc3 > 0) {
-                        rsc3 -= 1;
+                    } else {
+                        rsc3 += 1;
                         TextView viewToChange = v.findViewById(R.id.level_3_rocket_text);
                         viewToChange.setText(Integer.toString(rsc3));
                     }
-                }
-                break;
+                    break;
+                case R.id.stage_1_decrease:
+                    if (isSwitched) {
+                        if (rsh1 > 0) {
+                            rsh1 -= 1;
+                            TextView viewToChange = v.findViewById(R.id.level_1_rocket_text);
+                            viewToChange.setText(Integer.toString(rsh1));
+                        }
+                    } else {
+                        if (rsc1 > 0) {
+                            rsc1 -= 1;
+                            TextView viewToChange = v.findViewById(R.id.level_1_rocket_text);
+                            viewToChange.setText(Integer.toString(rsc1));
+                        }
+                    }
+                    break;
+                case R.id.stage_2_decrease:
+                    if (isSwitched) {
+                        if (rsh2 > 0) {
+                            rsh2 -= 1;
+                            TextView viewToChange = v.findViewById(R.id.level_2_rocket_text);
+                            viewToChange.setText(Integer.toString(rsh2));
+                        }
+                    } else {
+                        if (rsc2 > 0) {
+                            rsc2 -= 1;
+                            TextView viewToChange = v.findViewById(R.id.level_2_rocket_text);
+                            viewToChange.setText(Integer.toString(rsc2));
+                        }
+                    }
+                    break;
+                case R.id.stage_3_decrease:
+                    if (isSwitched) {
+                        if (rsh3 > 0) {
+                            rsh3 -= 1;
+                            TextView viewToChange = v.findViewById(R.id.level_3_rocket_text);
+                            viewToChange.setText(Integer.toString(rsh3));
+                        }
+                    } else {
+                        if (rsc3 > 0) {
+                            rsc3 -= 1;
+                            TextView viewToChange = v.findViewById(R.id.level_3_rocket_text);
+                            viewToChange.setText(Integer.toString(rsc3));
+                        }
+                    }
+                    break;
 
+            }
         }
     }
 }

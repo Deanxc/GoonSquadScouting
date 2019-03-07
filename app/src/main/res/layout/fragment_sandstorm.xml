@@ -6,8 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".SandstormFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-
     <TextView
         android:id="@+id/sandstorm_rocket_3"
         android:layout_width="38dp"
