@@ -26,7 +26,12 @@ public class ServerActivity extends AppCompatActivity {
     }
 
     public void toSetting(View view) {
-        Intent intent = new Intent (this, settingActivity.class);
+        Intent intent = new Intent (this, SettingActivity.class);
+        startActivity(intent);
+    }
+
+    public void toSelection(View view) {
+        Intent intent = new Intent (this,AllianceSelectionActivity.class);
         startActivity(intent);
     }
 

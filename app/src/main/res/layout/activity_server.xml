@@ -7,6 +7,17 @@
     tools:context=".ServerActivity">
 
     <Button
+        android:id="@+id/to_Alliance_Selection"
+        android:layout_width="261dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="60dp"
+        android:onClick="toSelection"
+        android:text="Alliance Selection"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/to_Show_Data" />
+
+    <Button
         android:id="@+id/to_Show_Data2"
         android:layout_width="261dp"
         android:layout_height="75dp"
@@ -15,14 +26,14 @@
         android:onClick="toSetting"
         android:text="Settings"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/to_Show_Data" />
+        app:layout_constraintTop_toBottomOf="@+id/to_Alliance_Selection" />
 
     <Button
         android:id="@+id/to_Data_Collection"
         android:layout_width="261dp"
         android:layout_height="75dp"
-        android:layout_marginStart="170dp"
-        android:layout_marginTop="220dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="192dp"
         android:onClick="toDataCollect"
         android:text="Collect Data"
         app:layout_constraintStart_toStartOf="parent"
