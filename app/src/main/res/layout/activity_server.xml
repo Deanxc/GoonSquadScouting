@@ -33,7 +33,7 @@
         android:layout_width="261dp"
         android:layout_height="75dp"
         android:layout_marginStart="168dp"
-        android:layout_marginTop="192dp"
+        android:layout_marginTop="144dp"
         android:onClick="toDataCollect"
         android:text="Collect Data"
         app:layout_constraintStart_toStartOf="parent"

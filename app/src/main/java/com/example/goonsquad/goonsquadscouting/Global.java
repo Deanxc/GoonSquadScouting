@@ -9,6 +9,8 @@ class Global {
      * Search for ([^,]*)(,|$)
      * Replace with "$1"$2,
      *
+     * Currently set for Jackson 2019
+     *
      */
 
     String teamList[] = {
