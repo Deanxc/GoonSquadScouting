@@ -14,6 +14,13 @@ import static com.example.goonsquad.goonsquadscouting.Global.*;
  * For devices with displays with a width of 720dp or greater, the sample log is always visible,
  * on other devices it's visibility is controlled by an item on the Action Bar.
  */
+
+
+/**
+ *
+ * Todo verify team is valid and prompt them to change if not
+ *
+ */
 public class clientSendInformationActivity extends AppCompatActivity {
 
     public static final String TAG = "ClientSendInfo";

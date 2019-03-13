@@ -1,61 +1,9 @@
 package com.example.goonsquad.goonsquadscouting;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 class Global {
-
-    /**
-     *
-     * Current Team List Use REGEX
-     *
-     * Search for ([^,]*)(,|$)
-     * Replace with "$1"$2,
-     *
-     * Currently set for Jackson 2019
-     *
-     */
-
-    String teamList[] = {
-            "247",
-            "302",
-            "1023",
-            "1481",
-            "2611",
-            "3604",
-            "4216",
-            "4325",
-            "4327",
-            "4362",
-            "4408",
-            "5205",
-            "5257",
-            "5502",
-            "5523",
-            "5623",
-            "5676",
-            "5685",
-            "5688",
-            "5704",
-            "5907",
-            "6092",
-            "6137",
-            "6425",
-            "6556",
-            "6580",
-            "6591",
-            "6592",
-            "6635",
-            "7197",
-            "7209",
-            "7219",
-            "7221",
-            "7222",
-            "7289",
-            "7501",
-            "7656",
-            "7665",
-            "7817",
-            "7857"
-    };
-
 
     /**
 
@@ -289,4 +237,91 @@ class Global {
 
      //String that is sent from client side
      static String toSend = "";
+
+
+
+
+    /**
+     *
+     * Current Team List Use REGEX
+     *
+     * Search for ([^,]*)(,|$)
+     * Replace with "$1"$2,
+     *
+     * Currently set for Jackson 2019
+     *
+     */
+
+    static ArrayList<String> teamList = new ArrayList<>(Arrays.asList(
+            "247",
+            "302",
+            "1023",
+            "1481",
+            "2611",
+            "3604",
+            "4216",
+            "4325",
+            "4327",
+            "4362",
+            "4408",
+            "5205",
+            "5257",
+            "5502",
+            "5523",
+            "5623",
+            "5676",
+            "5685",
+            "5688",
+            "5704",
+            "5907",
+            "6092",
+            "6137",
+            "6425",
+            "6556",
+            "6580",
+            "6591",
+            "6592",
+            "6635",
+            "7197",
+            "7209",
+            "7219",
+            "7221",
+            "7222",
+            "7289",
+            "7501",
+            "7656",
+            "7665",
+            "7817",
+            "7857"
+    ));
+
+    static ArrayList<String> firstPick = new ArrayList<>(Arrays.asList(
+            "247",
+            "302",
+            "1023",
+            "1481",
+            "2611"
+    ));
+
+    static ArrayList<String> secondPick = new ArrayList<>(Arrays.asList(
+            "6092",
+            "6137",
+            "6425",
+            "6556",
+            "6580",
+            "6591",
+            "6592",
+            "6635",
+            "7197",
+            "7209",
+            "7219",
+            "7221",
+            "7222",
+            "7289",
+            "7501",
+            "7656",
+            "7665",
+            "7817",
+            "7857"
+    ));
 }
