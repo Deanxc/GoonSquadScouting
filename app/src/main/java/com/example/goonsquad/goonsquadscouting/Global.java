@@ -294,34 +294,4 @@ class Global {
             "7817",
             "7857"
     ));
-
-    static ArrayList<String> firstPick = new ArrayList<>(Arrays.asList(
-            "247",
-            "302",
-            "1023",
-            "1481",
-            "2611"
-    ));
-
-    static ArrayList<String> secondPick = new ArrayList<>(Arrays.asList(
-            "6092",
-            "6137",
-            "6425",
-            "6556",
-            "6580",
-            "6591",
-            "6592",
-            "6635",
-            "7197",
-            "7209",
-            "7219",
-            "7221",
-            "7222",
-            "7289",
-            "7501",
-            "7656",
-            "7665",
-            "7817",
-            "7857"
-    ));
 }
