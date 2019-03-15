@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import java.util.List;
 
+import static com.example.goonsquad.goonsquadscouting.Global.*;
+
 public class TeamAdapter extends RecyclerView.Adapter<TeamAdapter.ViewHolder> {
 
     private List<String> mData;
@@ -19,6 +21,7 @@ public class TeamAdapter extends RecyclerView.Adapter<TeamAdapter.ViewHolder> {
     TeamAdapter(Context context, List<String> data) {
         this.mInflater = LayoutInflater.from(context);
         this.mData = data;
+        setHasStableIds(true);
     }
 
     // inflates the row layout from xml when needed
@@ -56,6 +59,27 @@ public class TeamAdapter extends RecyclerView.Adapter<TeamAdapter.ViewHolder> {
         public void onClick(View view) {
             if (mClickListener != null) mClickListener.onItemClick(view, getAdapterPosition());
         }
+    }
+
+    @Override
+    public long getItemId(int position) {
+        return position;
+    }
+
+    public void addItem(String val) {
+        mData.add(val);
+        rowCount++;
+        //LinearLayout layout = view.findViewById(R.id.allianceSelection);
+        //layout.setBackgroundColor(Color.RED);
+    }
+
+    public void removeItem(int val) {
+        mData.remove(val);
+    }
+
+    @Override
+    public int getItemViewType(int position) {
+        return position;
     }
 
     // convenience method for getting data at click position

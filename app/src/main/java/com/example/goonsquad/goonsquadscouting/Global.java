@@ -294,4 +294,6 @@ class Global {
             "7817",
             "7857"
     ));
+
+    static int rowCount = 0;
 }
