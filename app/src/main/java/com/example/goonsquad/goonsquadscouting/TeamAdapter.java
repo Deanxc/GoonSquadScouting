@@ -37,7 +37,7 @@ public class TeamAdapter extends RecyclerView.Adapter<TeamAdapter.ViewHolder> {
     public void onBindViewHolder(ViewHolder holder, int position) {
         String team = mData.get(position);
         holder.myTextView.setText(team);
-
+/*
         if(position %2 == 1)
         {
             holder.itemView.setBackgroundColor(Color.parseColor("#FFFFFF"));
@@ -48,7 +48,9 @@ public class TeamAdapter extends RecyclerView.Adapter<TeamAdapter.ViewHolder> {
             holder.itemView.setBackgroundColor(Color.parseColor("#FFFAF8FD"));
             //  holder.imageView.setBackgroundColor(Color.parseColor("#FFFAF8FD"));
         }
+*/
     }
+
 
     // total number of rows
     @Override
