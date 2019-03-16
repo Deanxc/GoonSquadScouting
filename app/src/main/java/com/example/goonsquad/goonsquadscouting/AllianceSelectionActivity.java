@@ -1,12 +1,14 @@
 package com.example.goonsquad.goonsquadscouting;
 
 import android.graphics.Color;
+import android.graphics.Paint;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
+import android.widget.TextView;
 
 import java.util.Iterator;
 
@@ -34,14 +36,24 @@ public class AllianceSelectionActivity extends AppCompatActivity implements Team
         //Toast.makeText(this, "You clicked " + adapter.getItem(position) + " on row number " + position, Toast.LENGTH_SHORT).show();
         //Toast.makeText(this, "You clicked tag: " + view.getTag(1), Toast.LENGTH_SHORT).show();
 
+        RecyclerView allTeams = findViewById(R.id.eventTeamList);
+        View row = allTeams.getLayoutManager().findViewByPosition(position);
+
+        TextView tv = row.findViewById(R.id.teamNum);
+        tv.setPaintFlags(Paint.STRIKE_THRU_TEXT_FLAG);
+        adapter.notifyDataSetChanged();
 
         //Changes
+        /*
         Iterator itr = teamList.iterator();
         while (itr.hasNext())
         {
             String x = (String) itr.next();
             if (x.equals(adapter.getItem(position))) {
-                //teamList.remove(position);
+
+                TextView tv = findViewById(R.id.teamNum);
+                tv.setPaintFlags(tv.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+
                 adapter.removeItem(position);
                 adapter.notifyItemRemoved(position);
 
@@ -64,7 +76,9 @@ public class AllianceSelectionActivity extends AppCompatActivity implements Team
                 adapter.notifyDataSetChanged();
 
                 break;
+
             }
         }
+        */
     }
 }

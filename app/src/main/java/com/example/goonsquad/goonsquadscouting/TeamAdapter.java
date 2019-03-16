@@ -1,6 +1,7 @@
 package com.example.goonsquad.goonsquadscouting;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -36,6 +37,17 @@ public class TeamAdapter extends RecyclerView.Adapter<TeamAdapter.ViewHolder> {
     public void onBindViewHolder(ViewHolder holder, int position) {
         String team = mData.get(position);
         holder.myTextView.setText(team);
+
+        if(position %2 == 1)
+        {
+            holder.itemView.setBackgroundColor(Color.parseColor("#FFFFFF"));
+            //  holder.imageView.setBackgroundColor(Color.parseColor("#FFFFFF"));
+        }
+        else
+        {
+            holder.itemView.setBackgroundColor(Color.parseColor("#FFFAF8FD"));
+            //  holder.imageView.setBackgroundColor(Color.parseColor("#FFFAF8FD"));
+        }
     }
 
     // total number of rows
