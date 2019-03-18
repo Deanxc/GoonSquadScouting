@@ -1,16 +1,12 @@
 package com.example.goonsquad.goonsquadscouting;
 
 import android.graphics.Color;
-import android.graphics.Paint;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
-
-import java.util.Iterator;
 
 import static com.example.goonsquad.goonsquadscouting.Global.*;
 
@@ -39,46 +35,25 @@ public class AllianceSelectionActivity extends AppCompatActivity implements Team
         RecyclerView allTeams = findViewById(R.id.eventTeamList);
         View row = allTeams.getLayoutManager().findViewByPosition(position);
 
-        TextView tv = row.findViewById(R.id.teamNum);
-        tv.setPaintFlags(Paint.STRIKE_THRU_TEXT_FLAG);
-        adapter.notifyDataSetChanged();
+        if(teamListColor.get(position).equals("0")) {
 
-        //Changes
-        /*
-        Iterator itr = teamList.iterator();
-        while (itr.hasNext())
-        {
-            String x = (String) itr.next();
-            if (x.equals(adapter.getItem(position))) {
-
-                TextView tv = findViewById(R.id.teamNum);
-                tv.setPaintFlags(tv.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
-
-                adapter.removeItem(position);
-                adapter.notifyItemRemoved(position);
-
-                adapter.addItem(x);
-                adapter.notifyDataSetChanged();
-
-                RecyclerView allTeams = findViewById(R.id.eventTeamList);
-                Log.d("Position", "Position: "+(adapter.getItemCount()-1));
-
-                for(int i = 1; i < rowCount+1; i++ ) {
-                    try {
-                        RecyclerView.ViewHolder hold = allTeams.findViewHolderForLayoutPosition(adapter.getItemCount() - i);
-                        hold.itemView.setBackgroundColor(Color.RED);
-                    }
-                    catch(NullPointerException e){
-                        Log.d("Position", "Position: "+(adapter.getItemCount()));
-                    }
-
-                }
-                adapter.notifyDataSetChanged();
-
-                break;
-
-            }
+            TextView tv = row.findViewById(R.id.teamNum);
+            teamListColor.set(position, "1");
+            //tv.setPaintFlags(Paint.STRIKE_THRU_TEXT_FLAG);
+            tv.setBackgroundColor(Color.RED);
+            tv.setTextColor(Color.WHITE);
+            adapter.notifyDataSetChanged();
         }
-        */
+        else {
+            TextView tv = row.findViewById(R.id.teamNum);
+            teamListColor.set(position, "0");
+            //tv.setPaintFlags(Paint.LINEAR_TEXT_FLAG);
+            if(position % 2 == 0)
+                tv.setBackgroundColor(Color.parseColor("#DCDCDC"));
+            else
+                tv.setBackgroundColor(Color.WHITE);
+            tv.setTextColor(Color.parseColor("#737373"));
+            adapter.notifyDataSetChanged();
+        }
     }
 }

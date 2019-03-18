@@ -22,7 +22,7 @@
         android:layout_width="202dp"
         android:layout_height="72dp"
         android:layout_marginStart="196dp"
-        android:layout_marginTop="388dp"
+        android:layout_marginTop="312dp"
         android:text="Delete DB"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -33,11 +33,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="62dp"
         android:layout_marginTop="82dp"
+        android:contentDescription="Team Number"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Team Number"
+        android:hint="Team Number"
+        android:inputType="text"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_delete" />
+        app:layout_constraintTop_toBottomOf="@+id/button_delete"
+        tools:text="Team Number" />
 
     <EditText
         android:id="@+id/delete_match_num"
@@ -45,11 +47,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="61dp"
         android:layout_marginTop="36dp"
+        android:contentDescription="Match Number"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Match Number"
+        android:hint="Match Number"
+        android:inputType="text"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/delete_team_num" />
+        app:layout_constraintTop_toBottomOf="@+id/delete_team_num"
+        tools:text="Match Number" />
 
     <Button
         android:id="@+id/dbDeleteRow"
