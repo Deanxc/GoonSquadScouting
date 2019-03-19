@@ -9,19 +9,54 @@
 
     <!-- TODO: Update blank fragment layout -->
 
+    <RadioGroup
+        android:id="@+id/defense_played_onthem_yn"
+        android:layout_width="57dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toEndOf="@+id/level_3hf_text"
+        app:layout_constraintTop_toBottomOf="@+id/defense_played_onthem_text">
+
+        <RadioButton
+            android:id="@+id/defense_played_onthem_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Yes" />
+
+        <RadioButton
+            android:id="@+id/defense_played_onthem_n"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="No" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/defense_played_onthem_text"
+        android:layout_width="140dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="232dp"
+        android:text="Was defense played on them?"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/level_2hf_text"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/defense_played_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="140dp"
+        android:layout_height="61dp"
         android:layout_marginStart="28dp"
         android:layout_marginTop="435dp"
-        android:text="Defense Played?"
+        android:text="Did they play defense?"
         android:textSize="18sp"
         app:layout_constraintStart_toEndOf="@+id/cs_failure_text2"
         app:layout_constraintTop_toTopOf="parent" />
 
     <RadioGroup
-        android:id="@+id/defense_played"
+        android:id="@+id/defense_played_yn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="41dp"
@@ -147,11 +182,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="6dp"
         android:text="Were they assisted?"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/defense_played" />
+        app:layout_constraintTop_toBottomOf="@+id/habitat_reached_yn" />
 
     <RadioGroup
         android:id="@+id/assisted_yn"
@@ -820,7 +855,7 @@
         app:layout_constraintTop_toBottomOf="@+id/cs_cf_decrement" />
 
     <RadioGroup
-        android:id="@+id/defense_played"
+        android:id="@+id/habitat_reached_yn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"

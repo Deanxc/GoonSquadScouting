@@ -64,6 +64,7 @@ class Global {
      static final String COL_L38 = "Leave_Habitat";
      static final String COL_L40 = "Notes";
      static final String COL_L39 = "Defense_Played";
+     static final String COL_L41 = "Defense_Played_On";
 
 
      static final String Table_Match_Creation_Query = "CREATE TABLE " + TABLE_MATCH_STATS + " ("
@@ -103,7 +104,8 @@ class Global {
             + COL_L37 + " INTEGER, "
             + COL_L38 + " INTEGER, "
             + COL_L39 + " INTEGER, "
-            + COL_L40 + " TEXT"
+            + COL_L40 + " TEXT, "
+            + COL_L41 + " INTEGER "
             + ")";
 
 
@@ -157,6 +159,7 @@ class Global {
      static int youAssistedVal = 0;
 
      static int defensePlayedVal = 0;
+     static int defensePlayedOnVal = 0;
 
     /**
         SANDSTORM FRAGMENT VARIABLES

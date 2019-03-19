@@ -159,11 +159,13 @@ public class TeleopFragment extends Fragment implements View.OnClickListener{
         cs_hf_d.setOnClickListener(this);
 
         //Radio Button Groups
-        final RadioGroup habitatReached = v.findViewById(R.id.defense_played);
+        final RadioGroup habitatReached = v.findViewById(R.id.habitat_reached_yn);
         RadioGroup wasAssisted = v.findViewById(R.id.assisted_yn);
         RadioGroup climbLevel = v.findViewById(R.id.climb_level);
         RadioGroup levelAssistedToo = v.findViewById(R.id.level_assisted_to);
-        final RadioGroup defensePlayed = v.findViewById(R.id.defense_played);
+        final RadioGroup defensePlayed = v.findViewById(R.id.defense_played_yn);
+
+        final RadioGroup defensePlayedOn = v.findViewById(R.id.defense_played_onthem_yn);
 
         //Radio Button listeners
         habitatReached.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -257,6 +259,21 @@ public class TeleopFragment extends Fragment implements View.OnClickListener{
             }
         });
 
+        defensePlayedOn.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                switch (checkedId) {
+                    case R.id.defense_played_onthem_n:
+                        defensePlayedOnVal = 0;
+                        //Toast.makeText(getActivity(), "Assist to level: " + youAssistedVal, Toast.LENGTH_LONG).show();
+                        break;
+                    case R.id.defense_played_onthem_yes:
+                        defensePlayedOnVal = 1;
+                        //Toast.makeText(getActivity(), "Assist to level: " + youAssistedVal, Toast.LENGTH_LONG).show();
+                        break;
+                }
+            }
+        });
+
         //Button to go to new activity
         Button sendInformation = v.findViewById(R.id.send_Info);
         sendInformation.setOnClickListener(new View.OnClickListener() {
@@ -266,6 +283,7 @@ public class TeleopFragment extends Fragment implements View.OnClickListener{
                 startActivity(intent);
             }
         });
+
 
 
         return v;

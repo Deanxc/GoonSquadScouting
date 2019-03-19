@@ -436,7 +436,7 @@ public class BluetoothServerFragment extends Fragment {
                                 Integer.parseInt(received.get(20)), Integer.parseInt(received.get(21)), Integer.parseInt(received.get(22)), Integer.parseInt(received.get(23)),
                                 Integer.parseInt(received.get(24)), Integer.parseInt(received.get(25)), Integer.parseInt(received.get(26)), Integer.parseInt(received.get(27)),
                                 Integer.parseInt(received.get(28)), Integer.parseInt(received.get(29)), Integer.parseInt(received.get(30)), Integer.parseInt(received.get(31)),
-                                Integer.parseInt(received.get(32)), Integer.parseInt(received.get(33)), Integer.parseInt(received.get(34)), received.get(35));
+                                Integer.parseInt(received.get(32)), Integer.parseInt(received.get(33)), Integer.parseInt(received.get(34)), received.get(35), Integer.parseInt(received.get(36)));
                     }
 
                     //IF IT BEGINS WITH "Server" and is there going from lead scout to drive coach
@@ -455,19 +455,20 @@ public class BluetoothServerFragment extends Fragment {
                         DatabaseHelper myDb = new DatabaseHelper(getContext());
                         List<String> received = display;
                         Log.d("Received size ",  Integer.toString(received.size()));
-                        for(int i = 0; i < (received.size()/36); i++){
-                            Log.d("Entry 1: ", Integer.toString((i*36) + 1));
-                            Log.d("Entry 2: ", Integer.toString((i*36) + 2));
-                            Log.d("Entry 3: ", Integer.toString((i*36) + 3));
-                            myDb.insertLocal(Integer.parseInt(received.get((i*36)+ 1)), Integer.parseInt(received.get((i*36) + 2)), Integer.parseInt(received.get((i*36) + 3)),
-                                    Integer.parseInt(received.get((i*36) + 4)), Integer.parseInt(received.get((i*36) + 5)), Integer.parseInt(received.get((i*36) + 6)), Integer.parseInt(received.get((i*36) + 7)),
-                                    Integer.parseInt(received.get((i*36) + 8)), Integer.parseInt(received.get((i*36) + 9)), Integer.parseInt(received.get((i*36) + 10)), Integer.parseInt(received.get((i*36) + 11)),
-                                    Integer.parseInt(received.get((i*36) + 12)), Integer.parseInt(received.get((i*36) + 13)), Integer.parseInt(received.get((i*36) + 14)), Integer.parseInt(received.get((i*36) + 15)),
-                                    Integer.parseInt(received.get((i*36) + 16)), Integer.parseInt(received.get((i*36) + 17)), Integer.parseInt(received.get((i*36) + 18)), Integer.parseInt(received.get((i*36) + 19)),
-                                    Integer.parseInt(received.get((i*36) + 20)), Integer.parseInt(received.get((i*36) + 21)), Integer.parseInt(received.get((i*36) + 22)), Integer.parseInt(received.get((i*36) + 23)),
-                                    Integer.parseInt(received.get((i*36) + 24)), Integer.parseInt(received.get((i*36) + 25)), Integer.parseInt(received.get((i*36) + 26)), Integer.parseInt(received.get((i*36) + 27)),
-                                    Integer.parseInt(received.get((i*36) + 28)), Integer.parseInt(received.get((i*36) + 29)), Integer.parseInt(received.get((i*36) + 30)), Integer.parseInt(received.get((i*36) + 31)),
-                                    Integer.parseInt(received.get((i*36) + 32)), Integer.parseInt(received.get((i*36) + 33)), Integer.parseInt(received.get((i*36) + 34)), Integer.parseInt(received.get((i*36) + 35)), received.get((i*36)+ 36));
+                        for(int i = 0; i < (received.size()/37); i++){
+                            Log.d("Entry 1: ", Integer.toString((i*37) + 1));
+                            Log.d("Entry 2: ", Integer.toString((i*37) + 2));
+                            Log.d("Entry 3: ", Integer.toString((i*37) + 3));
+                            myDb.insertLocal(Integer.parseInt(received.get((i*37)+ 1)), Integer.parseInt(received.get((i*37) + 2)), Integer.parseInt(received.get((i*37) + 3)),
+                                    Integer.parseInt(received.get((i*37) + 4)), Integer.parseInt(received.get((i*37) + 5)), Integer.parseInt(received.get((i*37) + 6)), Integer.parseInt(received.get((i*37) + 7)),
+                                    Integer.parseInt(received.get((i*37) + 8)), Integer.parseInt(received.get((i*37) + 9)), Integer.parseInt(received.get((i*37) + 10)), Integer.parseInt(received.get((i*37) + 11)),
+                                    Integer.parseInt(received.get((i*37) + 12)), Integer.parseInt(received.get((i*37) + 13)), Integer.parseInt(received.get((i*37) + 14)), Integer.parseInt(received.get((i*37) + 15)),
+                                    Integer.parseInt(received.get((i*37) + 16)), Integer.parseInt(received.get((i*37) + 17)), Integer.parseInt(received.get((i*37) + 18)), Integer.parseInt(received.get((i*37) + 19)),
+                                    Integer.parseInt(received.get((i*37) + 20)), Integer.parseInt(received.get((i*37) + 21)), Integer.parseInt(received.get((i*37) + 22)), Integer.parseInt(received.get((i*37) + 23)),
+                                    Integer.parseInt(received.get((i*37) + 24)), Integer.parseInt(received.get((i*37) + 25)), Integer.parseInt(received.get((i*37) + 26)), Integer.parseInt(received.get((i*37) + 27)),
+                                    Integer.parseInt(received.get((i*37) + 28)), Integer.parseInt(received.get((i*37) + 29)), Integer.parseInt(received.get((i*37) + 30)), Integer.parseInt(received.get((i*37) + 31)),
+                                    Integer.parseInt(received.get((i*37) + 32)), Integer.parseInt(received.get((i*37) + 33)), Integer.parseInt(received.get((i*37) + 34)), Integer.parseInt(received.get((i*37) + 35)), 
+                                    received.get((i*37)+ 36), Integer.parseInt(received.get((i*37)+37)));
 
                         }
                         Log.d("Returned Num of Matches", Integer.toString(myDb.getNumOfMatches(3604)));

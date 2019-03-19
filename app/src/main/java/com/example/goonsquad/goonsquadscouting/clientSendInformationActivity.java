@@ -57,7 +57,7 @@ public class clientSendInformationActivity extends AppCompatActivity {
                 level_2_cs, level_2_cf, level_3_cs, level_3_cf, ship_cs, ship_cf, level_1_hs, level_1_hf,
                 level_2_hs, level_2_hf, level_3_hs, level_3_hf, ship_hs, ship_hf, rsh1, rsh2, rsh3,
                 rsc1, rsc2, rsc3, cargo_front_c, cargo_front_h, cargo_side_c, cargo_side_h, habitatVal,
-                assistedVal, levelClimbedVal, youAssistedVal, startingVal, leaveVal, defensePlayedVal, notes);
+                assistedVal, levelClimbedVal, youAssistedVal, startingVal, leaveVal, defensePlayedVal, notes, defensePlayedOnVal);
 /*
         Cursor cur = myDb.getAll();
         StringBuffer buffer = new StringBuffer();

@@ -101,6 +101,7 @@ public class ClientActivity extends AppCompatActivity implements BottomNavigatio
 
         //Defense
         defensePlayedVal = 0;
+        defensePlayedOnVal = 0;
 
         teamId = -1;
         matchId = -1;

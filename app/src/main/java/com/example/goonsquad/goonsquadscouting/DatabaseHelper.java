@@ -40,7 +40,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                                int col12, int col13, int col14, int col15, int col16, int col17,
                                int col18, int col19, int col20, int col21, int col22, int col23,
                                int col24, int col29, int col30, int col31, int col32, int col33,
-                               int col34, int col35, int col36, int col37, int col38, int col39, String col40) {
+                               int col34, int col35, int col36, int col37, int col38, int col39,
+                               String col40, int col41) {
 
         SQLiteDatabase db = this.getWritableDatabase();
 
@@ -82,6 +83,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         contentValues.put(COL_L38, col38);
         contentValues.put(COL_L39, col39);
         contentValues.put(COL_L40, col40);
+        contentValues.put(COL_L41, col41);
 
         long result = db.insert(TABLE_MATCH_STATS, null, contentValues);
         return result != -1;
