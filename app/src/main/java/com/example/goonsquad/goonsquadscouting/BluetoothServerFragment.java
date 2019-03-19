@@ -472,8 +472,8 @@ public class BluetoothServerFragment extends Fragment {
                         }
                         Log.d("Returned Num of Matches", Integer.toString(myDb.getNumOfMatches(3604)));
                         Log.d("Return number of Hab", myDb.getNumOfLeaveHab(3604));
-                        Log.d("Return number of C", Integer.toString(myDb.getNumofCargo(3604)));
-                        Log.d("Return number of H", Integer.toString(myDb.getNumOfHatchPanels(3604)));
+                        Log.d("Return number of C", myDb.getNumofCargo(3604));
+                        Log.d("Return number of H", myDb.getNumOfHatchPanels(3604));
                         Log.d("Return number of H/C", myDb.getNumOfHatchandCargo(3604));
                         Log.d("Return number of climb", myDb.getNumOfClimb(3604));
 

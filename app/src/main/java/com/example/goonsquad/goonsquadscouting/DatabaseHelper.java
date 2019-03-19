@@ -7,6 +7,9 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
+
 import static com.example.goonsquad.goonsquadscouting.Global.*;
 
 
@@ -119,7 +122,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return send;
     }
 
-    public int getNumofCargo(int teamNum) {
+    public String getNumofCargo(int teamNum) {
         SQLiteDatabase db = this.getWritableDatabase();
         String query = "select " + COL_L3 + ", " +
                 COL_L5 + ", " + COL_L7 + ", " +
@@ -144,10 +147,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         if(cur.getCount() > 0)
             cargoCount = cargoCount/cur.getCount();
         Log.d("Number of Cargo: ", Integer.toString(cargoCount));
-        return cargoCount;
+        DecimalFormat form =  new DecimalFormat("#.0");
+        //cargoCount = Integer.parseInt(form.format(cargoCount));
+        return form.format(cargoCount);
     }
 
-    public int getNumOfHatchPanels(int teamNum) {
+    public String getNumOfHatchPanels(int teamNum) {
         SQLiteDatabase db = this.getWritableDatabase();
         String query = "select " + COL_L11 + ", " +
                 COL_L13 + ", " + COL_L15 + ", " +
@@ -172,7 +177,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         if(cur.getCount() > 0)
             hatchCount = hatchCount/cur.getCount();
         Log.d("Number of Hatch: ", Integer.toString(hatchCount));
-        return hatchCount;
+        DecimalFormat form =  new DecimalFormat("#.0");
+        //hatchCount = Integer.parseInt(form.format(hatchCount));
+
+        return form.format(hatchCount);
     }
 
     public String getNumOfHatchandCargo (int teamNum) {
@@ -201,7 +209,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             hcCountlvl2 = hcCountlvl2 / cur.getCount();
             hcCountlvl3 = hcCountlvl3 / cur.getCount();
         }
-        String send = hcCountlvl2 + "/" + hcCountlvl3;
+        DecimalFormat form =  new DecimalFormat("#.0");
+        String send = form.format(hcCountlvl2) + "/" + form.format(hcCountlvl3);
         Log.d("Number of HC: ", send);
         return send;
     }
