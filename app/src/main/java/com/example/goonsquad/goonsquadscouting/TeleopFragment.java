@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import static com.example.goonsquad.goonsquadscouting.Global.*;
 
@@ -279,8 +280,21 @@ public class TeleopFragment extends Fragment implements View.OnClickListener{
         sendInformation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), clientSendInformationActivity.class);
-                startActivity(intent);
+                boolean validTeam = false;
+                for(int i = 0; i < teamList.size(); i++){
+                    if(teamId == Integer.parseInt(teamList.get(i))) {
+                        validTeam = true;
+                    }
+                }
+
+                //get last team match num
+                if(validTeam) {
+                    Intent intent = new Intent(getActivity(), clientSendInformationActivity.class);
+                    startActivity(intent);
+                }
+                else {
+                    Toast.makeText(getContext(), "Select a valid team number", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
