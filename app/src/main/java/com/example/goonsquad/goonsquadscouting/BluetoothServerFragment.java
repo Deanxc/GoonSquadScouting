@@ -271,6 +271,7 @@ public class BluetoothServerFragment extends Fragment {
                             cur.getString(cur.getColumnIndex("Starting_Level")) + ", " +
                             cur.getString(cur.getColumnIndex("Leave_Habitat")) + ", " +
                             cur.getString(cur.getColumnIndex("Defense_Played")) + ", " +
+                            cur.getString(cur.getColumnIndex("Defense_Played_On")) + ", " +
                             cur.getString(cur.getColumnIndex("Notes"));
                 }
                 else
@@ -420,6 +421,7 @@ public class BluetoothServerFragment extends Fragment {
                                 "Level started at: " + display.get(32) + "\n" +
                                 "Habitat left: " + display.get(33) + "\n" +
                                 "Defense Played: " + display.get(34) + "\n" +
+                                "Defense Played on: " + display.get(36) + "\n" +
                                 "Notes: " + display.get(35) + "\n";
 
                         mConversationArrayAdapter.add(mConnectedDeviceName + ":  " + displayMessage);
@@ -437,6 +439,7 @@ public class BluetoothServerFragment extends Fragment {
                                 Integer.parseInt(received.get(24)), Integer.parseInt(received.get(25)), Integer.parseInt(received.get(26)), Integer.parseInt(received.get(27)),
                                 Integer.parseInt(received.get(28)), Integer.parseInt(received.get(29)), Integer.parseInt(received.get(30)), Integer.parseInt(received.get(31)),
                                 Integer.parseInt(received.get(32)), Integer.parseInt(received.get(33)), Integer.parseInt(received.get(34)), received.get(35), Integer.parseInt(received.get(36)));
+                        ;
                     }
 
                     //IF IT BEGINS WITH "Server" and is there going from lead scout to drive coach
@@ -471,12 +474,14 @@ public class BluetoothServerFragment extends Fragment {
                                     received.get((i*37)+ 36), Integer.parseInt(received.get((i*37)+37)));
 
                         }
+                        /*
                         Log.d("Returned Num of Matches", Integer.toString(myDb.getNumOfMatches(3604)));
                         Log.d("Return number of Hab", myDb.getNumOfLeaveHab(3604));
                         Log.d("Return number of C", myDb.getNumofCargo(3604));
                         Log.d("Return number of H", myDb.getNumOfHatchPanels(3604));
                         Log.d("Return number of H/C", myDb.getNumOfHatchandCargo(3604));
                         Log.d("Return number of climb", myDb.getNumOfClimb(3604));
+                        */
 
 
                         mConversationArrayAdapter.add(mConnectedDeviceName + ": I successfully received a copy of the database");

@@ -153,7 +153,7 @@ import static com.example.goonsquad.goonsquadscouting.Global.*;
                     rsc1 + ",  " + rsc2 + ",  " + rsc3 + ",  " + cargo_front_c + ",  " + cargo_front_h + ",  " +
                     cargo_side_c + ",  " + cargo_side_h + ",  " + habitatVal + ",  " + assistedVal + ",  " +
                     levelClimbedVal + ",  " + youAssistedVal + ",  " + startingVal + ",  " + leaveVal + ",  " +
-                    defensePlayedVal + ",  "  + notes;
+                    defensePlayedVal + ",  "  + notes + ",  " + defensePlayedOnVal;
 
             Log.d(TAG, toSend);
         }
