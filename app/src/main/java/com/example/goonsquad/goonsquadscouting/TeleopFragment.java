@@ -357,9 +357,11 @@ public class TeleopFragment extends Fragment implements View.OnClickListener{
         {
             //Level 1 Cargo success
             case R.id.stage_1_cs_increment:
-                level_1_cs++;
-                viewToChange = v.findViewById(R.id.level_1cs_text);
-                viewToChange.setText(Integer.toString(level_1_cs));
+                if(level_1_cs < 2) {
+                    level_1_cs++;
+                    viewToChange = v.findViewById(R.id.level_1cs_text);
+                    viewToChange.setText(Integer.toString(level_1_cs));
+                }
                 break;
             case R.id.stage_1_cs_decrement:
                 if(level_1_cs > 0) {
@@ -385,9 +387,11 @@ public class TeleopFragment extends Fragment implements View.OnClickListener{
 
             //Level 1 Hatch Success
             case R.id.stage_1_hs_increment:
-                level_1_hs++;
-                viewToChange = v.findViewById(R.id.level_1sh_text);
-                viewToChange.setText(Integer.toString(level_1_hs));
+                if(level_1_hs < 2) {
+                    level_1_hs++;
+                    viewToChange = v.findViewById(R.id.level_1sh_text);
+                    viewToChange.setText(Integer.toString(level_1_hs));
+                }
                 break;
 
             case R.id.stage_1_hs_decrement:
@@ -415,9 +419,11 @@ public class TeleopFragment extends Fragment implements View.OnClickListener{
 
             //Level 2 Cargo success
             case R.id.stage_2_cs_increment:
-                level_2_cs++;
-                viewToChange = v.findViewById(R.id.level_2cs_text);
-                viewToChange.setText(Integer.toString(level_2_cs));
+                if(level_2_cs < 2) {
+                    level_2_cs++;
+                    viewToChange = v.findViewById(R.id.level_2cs_text);
+                    viewToChange.setText(Integer.toString(level_2_cs));
+                }
                 break;
 
             case R.id.stage_2_cs_decrement:
@@ -445,9 +451,11 @@ public class TeleopFragment extends Fragment implements View.OnClickListener{
 
             //Level 2 Hatch Success
             case R.id.stage_2_hs_increment:
-                level_2_hs++;
-                viewToChange = v.findViewById(R.id.level_2hs_text);
-                viewToChange.setText(Integer.toString(level_2_hs));
+                if(level_2_hs < 2) {
+                    level_2_hs++;
+                    viewToChange = v.findViewById(R.id.level_2hs_text);
+                    viewToChange.setText(Integer.toString(level_2_hs));
+                }
                 break;
 
             case R.id.stage_2_hs_decrement:
@@ -475,9 +483,11 @@ public class TeleopFragment extends Fragment implements View.OnClickListener{
 
             //Level 3 Cargo success
             case R.id.stage_3_cs_increment:
-                level_3_cs++;
-                viewToChange = v.findViewById(R.id.level_3cs_text);
-                viewToChange.setText(Integer.toString(level_3_cs));
+                if(level_3_cs < 2) {
+                    level_3_cs++;
+                    viewToChange = v.findViewById(R.id.level_3cs_text);
+                    viewToChange.setText(Integer.toString(level_3_cs));
+                }
                 break;
 
             case R.id.stage_3_cs_decrement:
@@ -504,9 +514,11 @@ public class TeleopFragment extends Fragment implements View.OnClickListener{
                 break;
             //Level 3 Hatch Success
             case R.id.stage_3_hs_increment:
-                level_3_hs++;
-                viewToChange = v.findViewById(R.id.level_3hs_text);
-                viewToChange.setText(Integer.toString(level_3_hs));
+                if(level_3_hs < 2) {
+                    level_3_hs++;
+                    viewToChange = v.findViewById(R.id.level_3hs_text);
+                    viewToChange.setText(Integer.toString(level_3_hs));
+                }
                 break;
 
             case R.id.stage_3_hs_decrement:
@@ -534,9 +546,11 @@ public class TeleopFragment extends Fragment implements View.OnClickListener{
 
             //Cargo Ship Cargo Success
             case R.id.cs_cs_increment:
-                ship_cs++;
-                viewToChange = v.findViewById(R.id.cs_cs_text);
-                viewToChange.setText(Integer.toString(ship_cs));
+                if(ship_cs < 2) {
+                    ship_cs++;
+                    viewToChange = v.findViewById(R.id.cs_cs_text);
+                    viewToChange.setText(Integer.toString(ship_cs));
+                }
                 break;
 
             case R.id.cs_cs_decrement:
@@ -549,9 +563,9 @@ public class TeleopFragment extends Fragment implements View.OnClickListener{
 
             //Cargo Ship Cargo Failure
             case R.id.cs_cf_increment:
-                ship_cf++;
-                viewToChange = v.findViewById(R.id.cs_cf_text);
-                viewToChange.setText(Integer.toString(ship_cf));
+                    ship_cf++;
+                    viewToChange = v.findViewById(R.id.cs_cf_text);
+                    viewToChange.setText(Integer.toString(ship_cf));
                 break;
 
             case R.id.cs_cf_decrement:
@@ -564,9 +578,11 @@ public class TeleopFragment extends Fragment implements View.OnClickListener{
 
             //Cargo Ship Hatch Success
             case R.id.cs_hs_increment:
-                ship_hs++;
-                viewToChange = v.findViewById(R.id.cs_hs_text);
-                viewToChange.setText(Integer.toString(ship_hs));
+                if(ship_hs < 2) {
+                    ship_hs++;
+                    viewToChange = v.findViewById(R.id.cs_hs_text);
+                    viewToChange.setText(Integer.toString(ship_hs));
+                }
                 break;
 
             case R.id.cs_hs_decrement:
