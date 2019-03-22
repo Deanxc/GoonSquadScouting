@@ -437,13 +437,13 @@ public class SandstormFragment extends Fragment implements View.OnClickListener 
                 //rocket ship part of switch statement
                 case R.id.stage_1_increase:
                     if (isSwitched) {
-                        if(rsh1 < 2) {
+                        if(rsh1 < 4) {
                             rsh1 += 1;
                             TextView viewToChange = v.findViewById(R.id.level_1_rocket_text);
                             viewToChange.setText(Integer.toString(rsh1));
                         }
                     } else {
-                        if(rsc1 < 2) {
+                        if(rsc1 < 4) {
                             rsc1 += 1;
                             TextView viewToChange = v.findViewById(R.id.level_1_rocket_text);
                             viewToChange.setText(Integer.toString(rsc1));
@@ -452,13 +452,13 @@ public class SandstormFragment extends Fragment implements View.OnClickListener 
                     break;
                 case R.id.stage_2_increase:
                     if (isSwitched) {
-                        if(rsh2 < 2) {
+                        if(rsh2 < 4) {
                             rsh2 += 1;
                             TextView viewToChange = v.findViewById(R.id.level_2_rocket_text);
                             viewToChange.setText(Integer.toString(rsh2));
                         }
                     } else {
-                        if(rsc2 < 2) {
+                        if(rsc2 < 4) {
                             rsc2 += 1;
                             TextView viewToChange = v.findViewById(R.id.level_2_rocket_text);
                             viewToChange.setText(Integer.toString(rsc2));
@@ -467,13 +467,13 @@ public class SandstormFragment extends Fragment implements View.OnClickListener 
                     break;
                 case R.id.stage_3_increase:
                     if (isSwitched) {
-                        if(rsh3 < 2) {
+                        if(rsh3 < 4) {
                             rsh3 += 1;
                             TextView viewToChange = v.findViewById(R.id.level_3_rocket_text);
                             viewToChange.setText(Integer.toString(rsh3));
                         }
                     } else {
-                        if(rsc3 < 2) {
+                        if(rsc3 < 4) {
                             rsc3 += 1;
                             TextView viewToChange = v.findViewById(R.id.level_3_rocket_text);
                             viewToChange.setText(Integer.toString(rsc3));
