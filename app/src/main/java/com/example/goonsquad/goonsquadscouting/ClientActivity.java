@@ -1,6 +1,7 @@
 package com.example.goonsquad.goonsquadscouting;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -9,6 +10,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.widget.EditText;
 
 import static com.example.goonsquad.goonsquadscouting.Global.*;
 
@@ -49,6 +51,8 @@ public class ClientActivity extends AppCompatActivity implements BottomNavigatio
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_client);
+
+        DatabaseHelper myDb = new DatabaseHelper(getApplicationContext());
 
         manager.beginTransaction().add(R.id.client_container, fragmentInstructions, "3").hide(fragmentInstructions).commit();
         manager.beginTransaction().add(R.id.client_container, fragmentTeleop, "2").hide(fragmentTeleop).commit();
@@ -104,7 +108,10 @@ public class ClientActivity extends AppCompatActivity implements BottomNavigatio
         defensePlayedOnVal = 0;
 
         teamId = -1;
-        matchId = -1;
+
+        Cursor matchNum = myDb.getAll();
+        matchId = Integer.parseInt(Integer.toString(matchNum.getCount())) + 1;
+
         sandstorm_cargo_text = "Cargo";
         sandstorm_hatch_text = "Hatch";
 

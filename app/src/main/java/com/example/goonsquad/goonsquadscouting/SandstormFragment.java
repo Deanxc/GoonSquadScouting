@@ -112,6 +112,10 @@ public class SandstormFragment extends Fragment implements View.OnClickListener 
         rs2d.setOnClickListener(this);
         rs3d.setOnClickListener(this);
 
+        EditText editText = v.findViewById(R.id.match_id_Text);
+        editText.setText(Integer.toString(matchId));
+
+
         EditText teamID;
 //connecting to the xml layout
         teamID = v.findViewById(R.id.team_id_Text);
