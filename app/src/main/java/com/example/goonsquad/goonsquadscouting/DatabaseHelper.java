@@ -261,4 +261,32 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         Log.d("Query :", query);
         Log.d("Deleting Row", Integer.toString(cur.getCount()));
     }
+
+    public Cursor getTeamHatchPanels(int teamNum) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        String query = "select " + COL_L11 + ", " +
+                COL_L13 + ", " + COL_L15 + ", " +
+                COL_L17 + ", " + COL_L19 + ", " +
+                COL_L20 + ", " + COL_L21 + ", " +
+                COL_L30 + ", " + COL_L32 + ", " + COL_L2 +
+                " from " + TABLE_MATCH_STATS + " where " + COL_L1 + " = " + teamNum;
+        Cursor cur = db.rawQuery(query, null);
+
+        //hatchCount = Integer.parseInt(form.format(hatchCount));
+
+        return cur;
+    }
+
+    public Cursor getTeamCargo(int teamNum) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        String query = "select " + COL_L3 + ", " +
+                COL_L5 + ", " + COL_L7 + ", " +
+                COL_L9 + ", " + COL_L22 + ", " +
+                COL_L23 + ", " + COL_L24 + ", " +
+                COL_L29 + ", " + COL_L31 +
+                " from " + TABLE_MATCH_STATS + " where " + COL_L1 + " = " + teamNum;
+        Cursor cur = db.rawQuery(query, null);
+
+        return cur;
+    }
 }

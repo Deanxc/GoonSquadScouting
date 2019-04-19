@@ -17,8 +17,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".AllianceSelectionActivity"
-            android:parentActivityName=".ServerActivity"/>
+        <activity android:name=".HCActivity"
+            android:parentActivityName=".ServerActivity">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.goonsquad.goonsquadscouting.MainActivity" />
+            </activity>
+        <activity
+            android:name=".AllianceSelectionActivity"
+            android:parentActivityName=".ServerActivity" />
         <activity android:name=".clientSendInformationActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

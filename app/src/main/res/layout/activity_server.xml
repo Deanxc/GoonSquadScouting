@@ -7,21 +7,32 @@
     tools:context=".ServerActivity">
 
     <Button
+        android:id="@+id/to_Show_Data3"
+        android:layout_width="261dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="60dp"
+        android:onClick="toShowData"
+        android:text="Show Data"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/to_Alliance" />
+
+    <Button
         android:id="@+id/to_Alliance_Selection"
         android:layout_width="261dp"
         android:layout_height="75dp"
-        android:layout_marginStart="168dp"
+        android:layout_marginStart="170dp"
         android:layout_marginTop="60dp"
-        android:onClick="toSelection"
-        android:text="Alliance Selection"
+        android:onClick="toHC"
+        android:text="Team Hatch and Cargo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/to_Show_Data" />
+        app:layout_constraintTop_toBottomOf="@+id/to_Show_Data3" />
 
     <Button
         android:id="@+id/to_Show_Data2"
         android:layout_width="261dp"
         android:layout_height="75dp"
-        android:layout_marginStart="168dp"
+        android:layout_marginStart="170dp"
         android:layout_marginTop="60dp"
         android:onClick="toSetting"
         android:text="Settings"
@@ -32,7 +43,7 @@
         android:id="@+id/to_Data_Collection"
         android:layout_width="261dp"
         android:layout_height="75dp"
-        android:layout_marginStart="168dp"
+        android:layout_marginStart="170dp"
         android:layout_marginTop="144dp"
         android:onClick="toDataCollect"
         android:text="Collect Data"
@@ -40,13 +51,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/to_Show_Data"
+        android:id="@+id/to_Alliance"
         android:layout_width="261dp"
         android:layout_height="75dp"
         android:layout_marginStart="170dp"
         android:layout_marginTop="60dp"
-        android:onClick="toShowData"
-        android:text="Show Data"
+        android:onClick="toSelection"
+        android:text="Alliance Selection"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/to_Data_Collection" />
 

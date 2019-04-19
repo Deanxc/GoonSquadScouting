@@ -1,0 +1,1063 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HCActivity">
+
+    <TextView
+        android:id="@+id/team2_hatch12"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar4"
+        app:layout_constraintTop_toBottomOf="@+id/team2_hatch11" />
+
+    <TextView
+        android:id="@+id/team2_hatch11"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar4"
+        app:layout_constraintTop_toBottomOf="@+id/team2_hatch10" />
+
+    <TextView
+        android:id="@+id/team2_hatch10"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar4"
+        app:layout_constraintTop_toBottomOf="@+id/team2_hatch9" />
+
+    <TextView
+        android:id="@+id/team2_hatch9"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar4"
+        app:layout_constraintTop_toBottomOf="@+id/team2_hatch8" />
+
+    <TextView
+        android:id="@+id/team2_hatch8"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar4"
+        app:layout_constraintTop_toBottomOf="@+id/team2_hatch7" />
+
+    <TextView
+        android:id="@+id/team2_hatch7"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar4"
+        app:layout_constraintTop_toBottomOf="@+id/team2_hatch6" />
+
+    <TextView
+        android:id="@+id/team2_hatch6"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar4"
+        app:layout_constraintTop_toBottomOf="@+id/team2_hatch5" />
+
+    <TextView
+        android:id="@+id/team2_hatch5"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar4"
+        app:layout_constraintTop_toBottomOf="@+id/team2_hatch4" />
+
+    <TextView
+        android:id="@+id/team2_hatch4"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar4"
+        app:layout_constraintTop_toBottomOf="@+id/team2_hatch3" />
+
+    <TextView
+        android:id="@+id/team2_hatch3"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar4"
+        app:layout_constraintTop_toBottomOf="@+id/team2_hatch2" />
+
+    <TextView
+        android:id="@+id/team2_hatch2"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar4"
+        app:layout_constraintTop_toBottomOf="@+id/team2_hatch1" />
+
+    <TextView
+        android:id="@+id/team2_hatch1"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar4"
+        app:layout_constraintTop_toBottomOf="@+id/horizontal_Bar" />
+
+    <TextView
+        android:id="@+id/team2_cargo12"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar3"
+        app:layout_constraintTop_toBottomOf="@+id/team2_cargo11" />
+
+    <TextView
+        android:id="@+id/team2_cargo11"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar3"
+        app:layout_constraintTop_toBottomOf="@+id/team2_cargo10" />
+
+    <TextView
+        android:id="@+id/team2_cargo10"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar3"
+        app:layout_constraintTop_toBottomOf="@+id/team2_cargo9" />
+
+    <TextView
+        android:id="@+id/team2_cargo9"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar3"
+        app:layout_constraintTop_toBottomOf="@+id/team2_cargo8" />
+
+    <TextView
+        android:id="@+id/team2_cargo8"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar3"
+        app:layout_constraintTop_toBottomOf="@+id/team2_cargo7" />
+
+    <TextView
+        android:id="@+id/team2_cargo7"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar3"
+        app:layout_constraintTop_toBottomOf="@+id/team2_cargo6" />
+
+    <TextView
+        android:id="@+id/team2_cargo6"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar3"
+        app:layout_constraintTop_toBottomOf="@+id/team2_cargo5" />
+
+    <TextView
+        android:id="@+id/team2_cargo5"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar3"
+        app:layout_constraintTop_toBottomOf="@+id/team2_cargo4" />
+
+    <TextView
+        android:id="@+id/team2_cargo4"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar3"
+        app:layout_constraintTop_toBottomOf="@+id/team2_cargo3" />
+
+    <TextView
+        android:id="@+id/team2_cargo3"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar3"
+        app:layout_constraintTop_toBottomOf="@+id/team2_cargo2" />
+
+    <TextView
+        android:id="@+id/team2_cargo2"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar3"
+        app:layout_constraintTop_toBottomOf="@+id/team2_cargo1" />
+
+    <TextView
+        android:id="@+id/team2_cargo1"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar3"
+        app:layout_constraintTop_toBottomOf="@+id/horizontal_Bar" />
+
+    <TextView
+        android:id="@+id/team2_match12"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="12dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_Bar3"
+        app:layout_constraintTop_toBottomOf="@+id/team2_match11" />
+
+    <TextView
+        android:id="@+id/team2_match11"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="12dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_Bar3"
+        app:layout_constraintTop_toBottomOf="@+id/team2_match10" />
+
+    <TextView
+        android:id="@+id/team2_match10"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="12dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_Bar3"
+        app:layout_constraintTop_toBottomOf="@+id/team2_match9" />
+
+    <TextView
+        android:id="@+id/team2_match9"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="12dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_Bar3"
+        app:layout_constraintTop_toBottomOf="@+id/team2_match8" />
+
+    <TextView
+        android:id="@+id/team2_match8"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="12dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_Bar3"
+        app:layout_constraintTop_toBottomOf="@+id/team2_match7" />
+
+    <TextView
+        android:id="@+id/team2_match7"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="12dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_Bar3"
+        app:layout_constraintTop_toBottomOf="@+id/team2_match6" />
+
+    <TextView
+        android:id="@+id/team2_match6"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="12dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_Bar3"
+        app:layout_constraintTop_toBottomOf="@+id/team2_match5" />
+
+    <TextView
+        android:id="@+id/team2_match5"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="12dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_Bar3"
+        app:layout_constraintTop_toBottomOf="@+id/team2_match4" />
+
+    <TextView
+        android:id="@+id/team2_match4"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="12dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_Bar3"
+        app:layout_constraintTop_toBottomOf="@+id/team2_match3" />
+
+    <TextView
+        android:id="@+id/team2_match3"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="12dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_Bar3"
+        app:layout_constraintTop_toBottomOf="@+id/team2_match2" />
+
+    <TextView
+        android:id="@+id/team2_match2"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="12dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_Bar3"
+        app:layout_constraintTop_toBottomOf="@+id/team2_match1" />
+
+    <TextView
+        android:id="@+id/team2_match1"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="12dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_Bar3"
+        app:layout_constraintTop_toBottomOf="@+id/horizontal_Bar" />
+
+    <TextView
+        android:id="@+id/team1_hatch12"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar"
+        app:layout_constraintTop_toBottomOf="@+id/team1_hatch11" />
+
+    <TextView
+        android:id="@+id/team1_hatch11"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar"
+        app:layout_constraintTop_toBottomOf="@+id/team1_hatch10" />
+
+    <TextView
+        android:id="@+id/team1_hatch10"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar"
+        app:layout_constraintTop_toBottomOf="@+id/team1_hatch9" />
+
+    <TextView
+        android:id="@+id/team1_hatch9"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar"
+        app:layout_constraintTop_toBottomOf="@+id/team1_hatch8" />
+
+    <TextView
+        android:id="@+id/team1_hatch8"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar"
+        app:layout_constraintTop_toBottomOf="@+id/team1_hatch7" />
+
+    <TextView
+        android:id="@+id/team1_hatch7"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar"
+        app:layout_constraintTop_toBottomOf="@+id/team1_hatch6" />
+
+    <TextView
+        android:id="@+id/team1_hatch6"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar"
+        app:layout_constraintTop_toBottomOf="@+id/team1_hatch5" />
+
+    <TextView
+        android:id="@+id/team1_hatch5"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar"
+        app:layout_constraintTop_toBottomOf="@+id/team1_hatch4" />
+
+    <TextView
+        android:id="@+id/team1_hatch4"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar"
+        app:layout_constraintTop_toBottomOf="@+id/team1_hatch3" />
+
+    <TextView
+        android:id="@+id/team1_hatch3"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar"
+        app:layout_constraintTop_toBottomOf="@+id/team1_hatch2" />
+
+    <TextView
+        android:id="@+id/team1_hatch2"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar"
+        app:layout_constraintTop_toBottomOf="@+id/team1_hatch1" />
+
+    <TextView
+        android:id="@+id/team1_hatch1"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar"
+        app:layout_constraintTop_toBottomOf="@+id/horizontal_Bar" />
+
+    <TextView
+        android:id="@+id/team1_cargo12"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar1"
+        app:layout_constraintTop_toBottomOf="@+id/team1_cargo11" />
+
+    <TextView
+        android:id="@+id/team1_cargo11"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar1"
+        app:layout_constraintTop_toBottomOf="@+id/team1_cargo10" />
+
+    <TextView
+        android:id="@+id/team1_cargo10"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar1"
+        app:layout_constraintTop_toBottomOf="@+id/team1_cargo9" />
+
+    <TextView
+        android:id="@+id/team1_cargo9"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar1"
+        app:layout_constraintTop_toBottomOf="@+id/team1_cargo8" />
+
+    <TextView
+        android:id="@+id/team1_cargo8"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar1"
+        app:layout_constraintTop_toBottomOf="@+id/team1_cargo7" />
+
+    <TextView
+        android:id="@+id/team1_cargo7"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar1"
+        app:layout_constraintTop_toBottomOf="@+id/team1_cargo6" />
+
+    <TextView
+        android:id="@+id/team1_cargo6"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar1"
+        app:layout_constraintTop_toBottomOf="@+id/team1_cargo5" />
+
+    <TextView
+        android:id="@+id/team1_cargo5"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar1"
+        app:layout_constraintTop_toBottomOf="@+id/team1_cargo4" />
+
+    <TextView
+        android:id="@+id/team1_cargo4"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar1"
+        app:layout_constraintTop_toBottomOf="@+id/team1_cargo3" />
+
+    <TextView
+        android:id="@+id/team1_cargo3"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar1"
+        app:layout_constraintTop_toBottomOf="@+id/team1_cargo2" />
+
+    <TextView
+        android:id="@+id/team1_cargo2"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar1"
+        app:layout_constraintTop_toBottomOf="@+id/team1_cargo1" />
+
+    <TextView
+        android:id="@+id/team1_cargo1"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar1"
+        app:layout_constraintTop_toBottomOf="@+id/horizontal_Bar" />
+
+    <TextView
+        android:id="@+id/team1_match12"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/team1_match11" />
+
+    <TextView
+        android:id="@+id/team1_match11"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/team1_match10" />
+
+    <TextView
+        android:id="@+id/team1_match9"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/team1_match8" />
+
+    <TextView
+        android:id="@+id/team1_match10"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/team1_match9" />
+
+    <TextView
+        android:id="@+id/team1_match8"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/team1_match7" />
+
+    <TextView
+        android:id="@+id/team1_match7"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/team1_match6" />
+
+    <TextView
+        android:id="@+id/team1_match6"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/team1_match5" />
+
+    <TextView
+        android:id="@+id/team1_match5"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/team1_match4" />
+
+    <TextView
+        android:id="@+id/team1_match4"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/team1_match3" />
+
+    <TextView
+        android:id="@+id/team1_match3"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/team1_match2" />
+
+    <TextView
+        android:id="@+id/team1_match2"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/team1_match1" />
+
+    <View
+        android:id="@+id/vertical_Bar5"
+        android:layout_width="1dp"
+        android:layout_height="650dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="70dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintStart_toEndOf="@+id/hc_hatches_text2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/vertical_Bar4"
+        android:layout_width="1dp"
+        android:layout_height="650dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="5dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toStartOf="@+id/hc_hatches_text2"
+        app:layout_constraintStart_toEndOf="@+id/hc_cargo_text2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hc_hatches_text2"
+        android:layout_width="56dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="7dp"
+        android:text="Hatches Placed"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/hc_cargo_text2"
+        app:layout_constraintTop_toBottomOf="@+id/send_team2" />
+
+    <TextView
+        android:id="@+id/hc_match_num_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="17dp"
+        android:text="Match #"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/vertical_Bar2"
+        app:layout_constraintTop_toBottomOf="@+id/hc_team2" />
+
+    <View
+        android:id="@+id/vertical_Bar2"
+        android:layout_width="1dp"
+        android:layout_height="650dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="70dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintStart_toEndOf="@+id/hc_hatches_text1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/vertical_Bar"
+        android:layout_width="1dp"
+        android:layout_height="650dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="5dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toStartOf="@+id/hc_hatches_text1"
+        app:layout_constraintStart_toEndOf="@+id/hc_cargo_text1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hc_hatches_text1"
+        android:layout_width="56dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="7dp"
+        android:text="Hatches Placed"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/hc_cargo_text1"
+        app:layout_constraintTop_toBottomOf="@+id/send_team1" />
+
+    <EditText
+        android:id="@+id/hc_team2"
+        android:layout_width="114dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/send_team1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Team #2" />
+
+    <Button
+        android:id="@+id/send_team2"
+        android:layout_width="73dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="24dp"
+        android:text="Team #2"
+        android:textSize="9sp"
+        app:layout_constraintStart_toEndOf="@+id/hc_team2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/send_team1"
+        android:layout_width="73dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="24dp"
+        android:text="Team #1"
+        android:textSize="9sp"
+        app:layout_constraintStart_toEndOf="@+id/hc_team1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/hc_team1"
+        android:layout_width="114dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Team #1" />
+
+    <View
+        android:id="@+id/vertical_Bar1"
+        android:layout_width="1dp"
+        android:layout_height="650dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="5dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toStartOf="@+id/hc_cargo_text1"
+        app:layout_constraintStart_toEndOf="@+id/hc_match_num_text1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/vertical_Bar3"
+        android:layout_width="1dp"
+        android:layout_height="650dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="5dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toStartOf="@+id/hc_cargo_text2"
+        app:layout_constraintStart_toEndOf="@+id/hc_match_num_text2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hc_match_num_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="17dp"
+        android:text="Match #"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hc_team1" />
+
+    <View
+        android:id="@+id/horizontal_Bar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hc_hatches_text1" />
+
+    <TextView
+        android:id="@+id/hc_cargo_text1"
+        android:layout_width="53dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="7dp"
+        android:text="Cargo Placed"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/hc_match_num_text1"
+        app:layout_constraintTop_toBottomOf="@+id/hc_team1" />
+
+    <TextView
+        android:id="@+id/hc_cargo_text2"
+        android:layout_width="53dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="7dp"
+        android:text="Cargo Placed"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/hc_match_num_text2"
+        app:layout_constraintTop_toBottomOf="@+id/hc_team2" />
+
+    <TextView
+        android:id="@+id/team1_match1"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontal_Bar" />
+
+</android.support.constraint.ConstraintLayout>

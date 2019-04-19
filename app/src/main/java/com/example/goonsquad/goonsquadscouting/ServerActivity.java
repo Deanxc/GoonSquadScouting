@@ -38,4 +38,8 @@ public class ServerActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void toHC(View view) {
+        Intent intent = new Intent (this, HCActivity.class);
+        startActivity(intent);
+    }
 }
